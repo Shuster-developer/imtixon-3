@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.direction {
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  z-index: 2;
+  position: relative;
+}
+.card .bottom {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card .bottom .ichki {
+  display: flex;
+}
+.card .bottom .ichki i {
+  color: yellow;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+body {
+  background-color: rgba(202, 202, 202, 0.141);
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+#main-header {
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.2rem 0;
+  z-index: 7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.145);
+}
+#main-header .container .dropdawn {
+  display: none;
+  position: relative;
+}
+#main-header .container .dropdawn .dropdown-menu {
+  min-width: 200px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transition: 0.3s all ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  color: black;
+}
+#main-header .container .dropdawn .dropdown-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#main-header .container .dropdawn input:checked + .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+#main-header .container .link ul {
+  gap: 2rem;
+}
+
+#showcase {
+  margin-top: 10rem;
+}
+#showcase .container .alohida .portion h1 {
+  font-size: 5rem;
+  font-weight: 200;
+  letter-spacing: 5px;
+}
+#showcase .container .alohida .portion p {
+  width: 390px;
+  padding: 1rem 0;
+}
+#showcase .container .alohida .portion .btn {
+  padding: 0.6rem 1.1rem;
+  border: none;
+  background-color: black;
+  color: #fff;
+  border-radius: 4px;
+}
+#showcase .container .alohida .portion-2 img {
+  width: 630px;
+  height: 450px;
+}
+#showcase .container .brands {
+  margin-top: 10rem;
+  display: flex;
+  gap: 4rem;
+}
+
+#premium {
+  padding-top: 3rem;
+}
+#premium .container h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+#premium .container .cards {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+#premium .container .cards .card1 .card {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 623px;
+  justify-content: center;
+  padding-top: 1rem;
+  background-color: #fff;
+}
+#premium .container .cards .card1 .card .bottom {
+  display: none;
+}
+#premium .container .cards .card1 .card:hover .bottom {
+  transition: 0.5s;
+  display: flex;
+  justify-content: space-around;
+}
+#premium .container .cards .card2 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  display: flex;
+  row-gap: 1rem;
+  flex-wrap: wrap;
+}
+#premium .container .cards .card2 .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  padding-top: 2rem;
+}
+#premium .container .cards .card2 .card .bottom {
+  display: none;
+}
+#premium .container .cards .card2 .card:hover .bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+#new .container h2 {
+  text-align: center;
+  font-size: 30px;
+}
+#new .container .newcard {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+#new .container .newcard .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  padding: 1rem;
+}
+#new .container .newcard .card .bottom {
+  display: none;
+}
+#new .container .newcard .card:hover .bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+#best {
+  padding-top: 3rem;
+}
+#best .container h2 {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 30px;
+}
+#best .container .bestseller {
+  grid-gap: 2rem;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#best .container .bestseller .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  padding: 2rem;
+}
+#best .container .bestseller .card .bottom {
+  display: none;
+}
+#best .container .bestseller .card:hover .bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+#footer .container .ummumiy-portion {
+  justify-content: space-between;
+}
+#footer .container .ummumiy-portion .portion-3 p {
+  width: 300px;
+}
+#footer .container .ummumiy-portion .portion-4 ul {
+  padding-top: 0.4rem;
+  gap: 0.4rem;
+}
+#footer .container .ummumiy-portion .portion-5 ul {
+  padding-top: 0.4rem;
+  gap: 0.4rem;
+}
+#footer .container .ummumiy-portion .portion-6 ul {
+  padding-top: 0.4rem;
+  gap: 0.4rem;
+}
+
+.footer {
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer .scrollto {
+  gap: 1rem;
+}
+
+@media (max-width: 1350px) {
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  #showcase .container .alohida {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  #showcase .container .alohida .poriton {
+    margin-top: 1rem;
+  }
+  #showcase .container .brands {
+    display: none;
+  }
+  #new .container .newcard {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #best .container .bestseller {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1050px) {
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+  #main-header .container .dropdawn {
+    display: block;
+  }
+  #main-header .container .link ul.flex {
+    display: none;
+  }
+  #main-header .container .link ul.flex li {
+    display: none;
+  }
+  #premium .container .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #premium .container .cards .card2 {
+    justify-content: center;
+  }
+  #new .container .newcard {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  #best .container .bestseller {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  #footer .container .ummumiy-portion {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 830px) {
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+  #premium .container .cards .card1 .card {
+    width: 450px;
+  }
+  #new .container .newcard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #best .container .bestseller {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#footer .container .ummumiy-portion {
+  gap: 4rem;
+}
+
+@media (max-width: 530px) {
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  #showcase .container .alohida .portion h1 {
+    font-size: 30px;
+  }
+  #showcase .container .alohida .portion p {
+    width: 200px;
+  }
+  #premium .container .cards .card1 .card {
+    width: 300px;
+  }
+  #premium .container .cards .card2 .card {
+    width: 200px;
+  }
+  #new .container .newcard .card {
+    width: 200px;
+  }
+  #best .container .bestseller .card {
+    width: 200px;
+  }
+  #footer .container .icons {
+    margin-top: 1rem;
+  }
+  .footer .container .black {
+    align-items: center;
+  }
+}/*# sourceMappingURL=main.css.map */

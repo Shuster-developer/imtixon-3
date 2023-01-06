@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.direction {
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  z-index: 2;
+  position: relative;
+}
+.card .bottom {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: #fff;
+  align-items: center;
+  justify-content: space-around;
+  transform: translateY(100%);
+}
+.card .bottom .ichki {
+  display: flex;
+}
+.card .bottom .ichki i {
+  color: yellow;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+body {
+  background-color: rgba(202, 202, 202, 0.141);
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+#main-header {
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.2rem 0;
+  z-index: 7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.148);
+}
+#main-header .dropdawn {
+  display: none;
+}
+#main-header .dropdawn .dropdown-menu {
+  min-width: 200px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transition: 0.3s all ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  color: black;
+}
+#main-header .dropdawn .dropdown-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#main-header .dropdawn input:checked + .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+#main-header .container .link ul {
+  gap: 2rem;
+}
+
+#topish {
+  margin-top: 10rem;
+}
+#topish .container input {
+  width: 100%;
+  height: 40px;
+  padding-left: 1rem;
+}
+#topish .container .topishlar {
+  margin: 3rem 0;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+#topish .container .topishlar .card {
+  width: 300px;
+  background-color: #fff;
+  padding-top: 2rem;
+  padding: 0 1.4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#topish .container .topishlar .card .bottom {
+  transform: translateY(100%);
+  display: none;
+}
+#topish .container .topishlar .card:hover .bottom {
+  display: flex;
+  transition: 0.5s;
+  transform: translateY(0%);
+  justify-content: space-around;
+  visibility: visible;
+}
+
+#footer {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+#footer .container .ummumiy-portion {
+  justify-content: space-between;
+}
+#footer .container .ummumiy-portion .portion-3 p {
+  width: 300px;
+}
+#footer .container .ummumiy-portion .portion-4 ul {
+  padding-top: 0.4rem;
+  gap: 0.4rem;
+}
+#footer .container .ummumiy-portion .portion-5 ul {
+  padding-top: 0.4rem;
+  gap: 0.4rem;
+}
+#footer .container .ummumiy-portion .portion-6 ul {
+  padding-top: 0.4rem;
+  gap: 0.4rem;
+}
+
+.footer {
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer .scrollto {
+  gap: 2rem;
+}
+
+@media (max-width: 1370px) {
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  #topish .container .topishlar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #footer .container .icons {
+    margin-top: 2rem;
+  }
+  .footer .container .black {
+    gap: 2rem;
+  }
+}
+@media (max-width: 1040px) {
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+  #topish .container form input {
+    width: 500px;
+  }
+  #topish .container .topishlar {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  #main-header .container .link {
+    display: none;
+  }
+  #main-header .container .dropdawn {
+    display: block;
+  }
+  #footer .container .ummumiy-portion {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 815px) {
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+  #topish .container .topishlar {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 520px) {
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  #topish .container form input {
+    width: 300px;
+  }
+  .footer .container .black {
+    align-items: center;
+  }
+  #footer .container .ummumiy-portion {
+    gap: 2rem;
+  }
+  #footer .container .icons {
+    margin-top: 2rem;
+  }
+}/*# sourceMappingURL=srch.css.map */
